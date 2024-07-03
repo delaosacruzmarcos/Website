@@ -20,6 +20,14 @@ box text colour             bt               #123456
 
  */
  
+/*********************** GENERICS **********************/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 p,
 ul {
@@ -85,4 +93,13 @@ ul {
   color: #000000;
 }
  
+/*********************** ICON IMAGES ***********************/
 
+.iconContainer {
+  
+}
+
+.icon {
+  padding: 6px 8px 6px 16px;
+  position: fixed;
+}
