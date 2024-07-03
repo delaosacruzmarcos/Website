@@ -20,6 +20,7 @@ box text colour             bt               #123456
 
  */
  
+
 p,
 ul {
   border: 2px solid rebeccapurple;
@@ -40,3 +41,48 @@ ul {
 .block {
   display: block;
 }
+
+/*********************** SIDE BAR STYLE **********************/
+
+.leftSideNav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 40px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  transition: margin-left .5s; /* If you want a transition effect */
+}
+
+/* The navigation menu links */
+.leftSideNav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.leftSideNav a:hover {
+  color: #f1f1f1;
+}
+
+/* Grey out main elements when sidebar is opened */
+.overlayed {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/***********************************************************/
+
+/* Style page content */
+.main {
+  margin-left: 40px; /* Same as the width of the sidebar */
+  transition: margin-left .5s; /* If you want a transition effect */
+  color: #000000;
+}
+ 
+

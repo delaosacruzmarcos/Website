@@ -11,39 +11,55 @@
   <img src="mybannerimage.gif" alt="Banner Image"/>
 </header>
 <body>
+    <!-- Side navigation -->
+    <div class="leftSideNav" id="leftSideNav">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <main id="content" class="main" >
+        <h1>My First Heading</h1>
+        <h2> Second heading here </h2>
 
-<h1>My First Heading</h1>
-<h2> Second heading here </h2>
+        <!-- Resume & Intro -->
+        <div>
+            <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            </ul>
+        </div>
 
-<!-- Resume & Intro -->
-<ul>
-  <li>Item One</li>
-  <li>Item Two</li>
-  <li>Item Three</li>
-</ul>
+        <!-- Project 1 -->
+        <div>
+            <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            </ul>
+        </div>
 
-<!-- Project 1 -->
-<ul>
-  <li>Item One</li>
-  <li>Item Two</li>
-  <li>Item Three</li>
-</ul>
+        <!-- Project 2 -->
+        <div>
+            <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            </ul>
+        </div>
 
-<!-- Project 2 -->
-<ul>
-  <li>Item One</li>
-  <li>Item Two</li>
-  <li>Item Three</li>
-</ul>
-<button type="button" onclick="greet();">Click Me!</button>
-
-<div id="add_to_me">
-    <h1>Greetings</h1>
-    <p>
-        This is the text which has
-        already been typed into
-        the div
-    </p>
-</div>
+        <button type="button" onclick="greet();">Click Me!</button>
+        <button type="button" onclick="openLeftSideBar();">openLeftSideBar!</button>
+        <button type="button" onclick="closeLeftSideBar();">closeLeftSideBar!</button>
+        <div id="add_to_me">
+            <h1>Greetings</h1>
+            <p>
+                This is the text which has
+                already been typed into
+                the div
+            </p>
+        </div>
+    </main>
 </body>
 </html>
