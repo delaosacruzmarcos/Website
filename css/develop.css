@@ -1,0 +1,42 @@
+ /***********************************************************\
+|  GENERAL STYLE SHEET                                        |
+| For learning how to update the colors and tags of my HTML   |
+| pages.                                                      |
+ \***********************************************************/
+ 
+ /********************* Colour reference chart****************
+  ************************* comment ******** colour ******** 
+
+box background colour       bbg              #567890
+box border colour           bb               #abcdef
+box text colour             bt               #123456
+ 
+ /*  Color scheme to match vscode dark mode
+ turquoise #40c9ab
+ black #1e1e1e
+ off orange #c3602c
+ yellow #f1cb10
+ magenta #b663a1
+
+ */
+ 
+p,
+ul {
+  border: 2px solid rebeccapurple;
+  padding: .5em;
+}
+
+.block,
+li {
+  border: 2px solid blue;
+  padding: .5em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.block {
+  display: block;
+}

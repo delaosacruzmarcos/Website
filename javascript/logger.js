@@ -38,9 +38,10 @@ class line {
             }else{
                 text = " " + text + " ";
             }
-            let textLen = text.Length;
+            let textLen = text.Length;\
+            // determine the midsection to add the text too
             let chars = (this.#lineLen - textLen) / 2;
-            
+            // I'm a bit too drunk to finish this atm come back later...
 
             // Determine insertion 
         } catch (error){
