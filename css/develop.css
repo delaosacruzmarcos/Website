@@ -65,23 +65,32 @@ ul {
   transition: margin-left .5s; /* If you want a transition effect */
 }
 
+/*********************** ICON IMAGES ***********************/
+
+/* iconContainer class for spacing icons */
+.leftSideNav .iconContainer {
+  height: 36px;
+}
+
 /* The navigation menu links */
-.leftSideNav a {
+.leftSideNav .icon {
   padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  fill: #818181;
   display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
-.leftSideNav a:hover {
-  color: #f1f1f1;
+/* iconContainer larger hover range */
+.leftSideNav .iconContainer :hover {
+  fill: #f1f1f1;
 }
 
 /* Grey out main elements when sidebar is opened */
 .overlayed {
   background-color: rgba(0,0,0,0.5);
+}
+
+.highlight {
+  fill:aqua;
 }
 
 /***********************************************************/
@@ -93,13 +102,3 @@ ul {
   color: #000000;
 }
  
-/*********************** ICON IMAGES ***********************/
-
-.iconContainer {
-  
-}
-
-.icon {
-  padding: 6px 8px 6px 16px;
-  position: fixed;
-}
