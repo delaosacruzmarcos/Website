@@ -16,13 +16,6 @@ function greet() {
  /**************** SIDE BAR ANNIMATIONS *********************/
 
 // Holds state of the current Icon press
-const sidebarState = {
-  fileIcon: true,
-  searchIcon: false,
-  versionIcon: false,
-  debugIcon: false,
-  extensionIcon: false
-}
 
 function openLeftSideBar() {
     var mainContent = document.getElementById("content");
@@ -53,17 +46,16 @@ function toggleFileSideBar() {
     document.getElementById("fileIcon").classList.add("icon-current");
 }
 
-function updateSideBar(){
-    // turn off all sidebar icons
-    for (let [key, value] of sidebarState.entries()) {
-        value = false;
-    }
-}
 
 // function to flip the state at the given index
 function toggleButton(index) {
-    updateSideBar()
-    sidebarState[index] = !sidebarState[index]; // negate existing value. true becomes false, vice-versa
-    document.getElementById(index).classList.remove("icon");
-    document.getElementById(index).classList.add("icon-current");
+
+    var element = document.getElementsByClassName("icon-current")[0];
+    if (!(element === undefined)){
+            element.classList.remove("icon-current");
+            element.classList.add("icon");
+    }
+    var iconIndex = document.getElementById(index);
+    iconIndex.classList.remove("icon");
+    iconIndex.classList.add("icon-current");
 }
