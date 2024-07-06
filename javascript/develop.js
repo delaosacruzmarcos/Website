@@ -49,13 +49,19 @@ function toggleFileSideBar() {
 
 // function to flip the state at the given index
 function toggleButton(index) {
-
+    var toggle = true;
     var element = document.getElementsByClassName("icon-current")[0];
     if (!(element === undefined)){
             element.classList.remove("icon-current");
             element.classList.add("icon");
+            if (element.id == index){
+                toggle = false;
+            }
     }
+    if (toggle){
     var iconIndex = document.getElementById(index);
+    //alert(iconIndex);
     iconIndex.classList.remove("icon");
     iconIndex.classList.add("icon-current");
+    }
 }
