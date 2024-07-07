@@ -52,7 +52,7 @@ ul {
 
 /*********************** SIDE BAR STYLE **********************/
 
-.leftSideNav {
+.sidebar-left {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 40px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -62,28 +62,32 @@ ul {
   background-color: #28242c; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 30px;
+  display: grid;
+  grid-template-areas: 'icon-containers icon-elements';
 }
 
 /*********************** ICON IMAGES ***********************/
 
 /* iconContainer class for spacing icons */
-.leftSideNav .iconContainer {
-  padding: 6px 8px 8px 6px;
-  height: 40px;
-  width: 40px;
+.icon-containers {
+  grid-area: icon-containers;
   position: center;
+  height: fit-content;
   background-color: #28242c;
   border: none;
+  color: #28242c;
 }
 
 /* The navigation menu links */
-.iconContainer .icon {
+.icon-container {
   fill: #818181;
+  background-color: #28242c;
   display: block;
+  border: none;
 }
 
 /* iconContainer larger hover range */
-.iconContainer :hover {
+.icon-container :hover {
   fill: #f1f1f1;
 }
 
@@ -91,16 +95,27 @@ ul {
   fill: #f1f1f1;
 }
 
-.unselected_tab {
-  background-color: #111; /* Black */
-}
-
 /* Grey out main elements when sidebar is opened */
 .overlayed {
   background-color: rgba(0,0,0,0.5);
 }
 
+// Holds info from selected icon-container
+.icon-elements {
+  grid-area: icon-elements;
+}
 
+.icon-element {
+  object-position: center;
+}
+
+.icon-element-visible {
+  color: yellow
+}
+
+.icon-element-invisible {
+  color: #28242c
+}
 /***********************************************************/
 
 /* Style page content */

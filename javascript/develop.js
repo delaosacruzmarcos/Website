@@ -40,13 +40,6 @@ function closeLeftSideBar() {
 
 }
 
-
-function toggleFileSideBar() {
-    document.getElementById("fileIcon").classList.remove("icon");
-    document.getElementById("fileIcon").classList.add("icon-current");
-}
-
-
 // function to flip the state at the given index
 function toggleButton(index) {
     var toggle = true;
@@ -56,12 +49,13 @@ function toggleButton(index) {
             element.classList.add("icon");
             if (element.id == index){
                 toggle = false;
+                closeLeftSideBar();
             }
     }
     if (toggle){
-    var iconIndex = document.getElementById(index);
-    //alert(iconIndex);
-    iconIndex.classList.remove("icon");
-    iconIndex.classList.add("icon-current");
+        openLeftSideBar();
+        var iconIndex = document.getElementById(index);
+        iconIndex.classList.remove("icon");
+        iconIndex.classList.add("icon-current");
     }
 }
