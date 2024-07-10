@@ -50,6 +50,7 @@ function toggleButton(index) {
             if (element.id == index){
                 toggle = false;
                 closeLeftSideBar();
+                chooseIcon(index);
             }
     }
     if (toggle){
@@ -58,4 +59,17 @@ function toggleButton(index) {
         iconIndex.classList.remove("icon");
         iconIndex.classList.add("icon-current");
     }
+}
+
+// Using the index toggle the Icon related to that index on
+function chooseIcon(index){
+    alert(index);
+    //Convert index from container to Icon
+    var idx = str.indexOf('Icon');
+    alert(idx);
+    str = str.substring(0, idx);
+    alert(str)
+    str = str + "Text";
+    alert(str);
+
 }
